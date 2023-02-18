@@ -29,7 +29,11 @@ var App = {
       console.log(data);
 
       // TODO: Use the data to update Messages and Rooms
+      Messages.addMessages(data);
+
       // and re-render the corresponding views.
+      MessagesView.render();
+
     });
   },
 
